@@ -50,13 +50,14 @@ async function getWeather() {
             document.body.style.background = "url('./assets/dayrain.jpg')";
             document.body.style.backgroundSize = "cover";
             document.getElementById("update_Text").innerText = "Bring an umbrella!";
+            document.body.style.color = "white";
     } else if
         (weather.data.current.weather.ic == "13d" || weather.data.current.weather.ic == "13n") {
             document.body.style.background = "url('./assets/snow.jpg')";
             document.body.style.backgroundSize = "cover";
             document.getElementById("update_Text").innerText = "It's snowing! Dress warm";
-    } else if 
-    (weather.data.current.weather.ic == "50d" || weather.data.current.weather.ic == "50n") {
+    } else if
+        (weather.data.current.weather.ic == "50d" || weather.data.current.weather.ic == "50n") {
         document.body.style.background = "url('./assets/mist.jpg')";
         document.body.style.backgroundSize = "cover";
         document.getElementById("update_Text").innerText = "It's misty!";
