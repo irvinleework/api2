@@ -1,0 +1,17 @@
+body {
+    background-image: url("./assets/default.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: larger;
+}
+button {
+    border-radius: 0.12em;
+    border:0.1em solid #FFFFFF;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+}
+button:hover {
+    background: white;
+    color: black;
+}
