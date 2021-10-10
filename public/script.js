@@ -1,11 +1,8 @@
 const API_KEY = 'd6e3a7cb-7257-4786-a22f-59c4228f1634'
-const API_URL = `http://api.airvisual.com/v2/nearest_city?key=${API_KEY}`
+const API_URL = `https://api.airvisual.com/v2/nearest_city?key=${API_KEY}`
 
 const search_btn = document.getElementById('search_btn')
-search_btn.addEventListener("click", ()=>{
-    console.log("button pressed")
-    getWeather()
-})
+
 async function getWeather() {
     const response = await fetch(API_URL);
     console.log(response)
@@ -65,3 +62,4 @@ async function getWeather() {
 
     
 }
+search_btn.addEventListener("click", getWeather)
