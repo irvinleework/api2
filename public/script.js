@@ -1,4 +1,4 @@
-const API_KEY = 'd6e3a7cb-7257-4786-a22f-59c4228f1634'
+const API_KEY = 'b4fcf036-4926-49cc-a2e5-12128bc84fa9'
 const API_URL = `https://api.airvisual.com/v2/nearest_city?key=${API_KEY}`
 
 const search_btn = document.getElementById('search_btn')
